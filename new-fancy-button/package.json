@@ -55,7 +55,9 @@
     "version": 2,
     "type": "addon",
     "main": "addon-main.js",
-    "app-js": {}
+    "app-js": {
+      "./components/fancy-button.js": "./dist/_app_/components/fancy-button.js"
+    }
   },
   "exports": {
     ".": "./dist/index.js",
