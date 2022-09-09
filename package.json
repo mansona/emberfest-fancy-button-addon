@@ -6,17 +6,17 @@
   "license": "MIT",
   "author": "",
   "scripts": {
-    "prepare": "yarn build",
-    "build": "yarn workspace new-fancy-button run build",
+    "prepare": "npm run build",
+    "build": "npm --workspace=new-fancy-button run build",
 
     "start": "concurrently 'npm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
-    "start:addon": "yarn workspace new-fancy-button run start",
-    "start:test": "yarn workspace test-app run start",
+    "start:addon": "npm --workspace=new-fancy-button run start",
+    "start:test": "npm --workspace=test-app run start",
 
-    "lint": "yarn workspaces run lint",
-    "lint:fix": "yarn workspaces run lint:fix",
+    "lint": "npm --workspaces run lint",
+    "lint:fix": "npm --workspaces run lint:fix",
 
-    "test": "yarn workspaces run test"
+    "test": "npm --workspaces run test"
   },
   "devDependencies": {
     "concurrently": "^7.2.1",
