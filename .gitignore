@@ -25,3 +25,4 @@ node_modules/
 
 # bottled-ember
 /bottled-dist/
+/bottled-docs/
